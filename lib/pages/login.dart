@@ -13,14 +13,18 @@ class Login extends StatelessWidget {
           child: Column(children: [
             SizedBox(height: 64),
             Mytextfeild(
-              textInputTypee:
-              ispass:,
-              hinttextt:,
+              textInputTypee:TextInputType.emailAddress,
+              ispass:false,
+              hinttextt:"enter your email",
             ),
             SizedBox(
               height: 16,
             ),
-            Mytextfeild(),
+            Mytextfeild(
+               textInputTypee:TextInputType.text,
+              ispass:true,
+              hinttextt:"enter your pasword",
+            ),
           ]),
         ),
       ),
