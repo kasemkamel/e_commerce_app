@@ -12,7 +12,11 @@ class Login extends StatelessWidget {
           padding: const EdgeInsets.all(33.0),
           child: Column(children: [
             SizedBox(height: 64),
-            Mytextfeild(),
+            Mytextfeild(
+              textInputTypee:
+              ispass:,
+              hinttextt:,
+            ),
             SizedBox(
               height: 16,
             ),
