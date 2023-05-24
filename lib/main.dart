@@ -11,7 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    
+    body: Center(
+      child: Column(
+        children: [
+          Text("data"),
+        ],
+      ),
+    ),
   
 
      );}}
