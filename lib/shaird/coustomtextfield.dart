@@ -6,10 +6,12 @@ class Mytextfeild extends StatelessWidget {
  final String hinttextt;
 
 Mytextfeild(
-  {Key?key, 
+  {super.key, Key?jey, 
+  
     required this.textInputTypee,required this.hinttextt,required this.ispass
   }
-)
+
+);
 
   @override
   Widget build(BuildContext context) {
