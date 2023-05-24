@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
 class Mytextfeild extends StatelessWidget {
-  const Mytextfeild({super.key});
+ final TextInputType textInputTypee;
+ final bool ispass;
+ final String hinttextt;
+
+Mytextfeild(
+  {Key?key, 
+    required this.textInputTypee,required this.hinttextt,required this.ispass
+  }
+)
 
   @override
   Widget build(BuildContext context) {
