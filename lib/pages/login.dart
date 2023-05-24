@@ -32,7 +32,25 @@ class Login extends StatelessWidget {
 
                 SizedBox(
                   height: 16,
-                )
+                ),
+                TextField(
+                keyboardType: TextInputType.text,
+                obscureText: true,
+                decoration: InputDecoration(
+                  hintText: "Enter Your Password : ",
+                  // To delete borders
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: Divider.createBorderSide(context),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  // fillColor: Colors.red,
+                  filled: true,
+                  contentPadding: const EdgeInsets.all(8),
+                )),
           ]),
         ),
       ),
