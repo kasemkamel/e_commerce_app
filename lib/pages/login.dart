@@ -1,3 +1,4 @@
+import 'package:e_commerce_project/shaird/coustomtextfield.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
@@ -10,47 +11,12 @@ class Login extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(33.0),
           child: Column(children: [
-            const SizedBox(height: 64),
-            TextField(
-                keyboardType: TextInputType.text,
-                obscureText: true,
-                decoration: InputDecoration(
-                  hintText: "Enter Your Password : ",
-                  // To delete borders
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: Divider.createBorderSide(context),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.grey,
-                    ),
-                  ),
-                  // fillColor: Colors.red,
-                  filled: true,
-                  contentPadding: const EdgeInsets.all(8),
-                )),
-
-                SizedBox(
-                  height: 16,
-                ),
-                TextField(
-                keyboardType: TextInputType.text,
-                obscureText: true,
-                decoration: InputDecoration(
-                  hintText: "Enter Your Password : ",
-                  // To delete borders
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: Divider.createBorderSide(context),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.grey,
-                    ),
-                  ),
-                  // fillColor: Colors.red,
-                  filled: true,
-                  contentPadding: const EdgeInsets.all(8),
-                )),
+            SizedBox(height: 64),
+            Mytextfeild(),
+            SizedBox(
+              height: 16,
+            ),
+            Mytextfeild(),
           ]),
         ),
       ),
